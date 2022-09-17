@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="task09.js"></script>
+</head>
+
+<body>
+
+    <h1>AJAX methods</h1>
+    <form>
+        <input id="Surname" type="text" placeholder="Surname" onkeyup="check()"><br><br>
+        <input id="Name" type="text" placeholder="Name" onkeyup="check()"><br><br>
+        <input id="Age" type="text" placeholder="Age" onkeyup="check()" onblur="validateAge()"><br><br>
+        <input id="Address" type="text" placeholder="Address" onkeyup="check()"><br>
+        <p id="Message">Для отправки формы необходимо корректно заполнить все поля!</p>
+        <input id="AjaxGET" type="button" value="Ajax GET" onclick="sendDataByGetMethod()" disabled>
+        <input id="AjaxPOST" type="button" value="Ajax POST" onclick="sendDataByPostMethod()" disabled>
+        <input type="button" value="Clear Fields" onclick="clearFields()">
+    </form>
+
+    <style>
+        .error {
+            border-color: red
+        }
+    </style>
+
+</body>
+
+</html>
