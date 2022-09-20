@@ -26,7 +26,7 @@ function validateAge() {
         age.classList.add("error");
         age.value = "";
         age.focus();
-        console.log("Возраст должен быть числом от 1 до 100 лет!");
+        console.log("The age must be a number from 1 to 100 years old");
     }
 }
 
